@@ -1,3 +1,15 @@
+type Book = record {
+    title: text;
+    author: text;
+    is_borrowed: bool;
+};
+
 service : {
-    "greet": (text) -> (text) query;
+    "add_book": (text, text) -> ();
+    "get_book": (text) -> (opt Book) query;
+    "borrow_book": (text) -> (bool);
+    "return_book": (text) -> (bool);
+    "get_all_books": () -> (vec Book) query;
+    "get_available_books": () -> (vec Book) query;
+    "get_borrowed_books": () -> (vec Book) query;
 }
