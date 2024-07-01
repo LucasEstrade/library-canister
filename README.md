@@ -1,4 +1,4 @@
-# Library Canisrter
+# Library Canister
 
 This project is inspired by the ICP Hello World Rust canister project.
 The idea was to give a real world use case in order to get basic knowledge of canister smart contracts with ICP.
